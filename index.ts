@@ -11,6 +11,7 @@ const eslint: Linter.Config = {
         'plugin:@typescript-eslint/recommended',
         'prettier',
         'plugin:eslint-comments/recommended',
+        'plugin:import/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -41,6 +42,12 @@ const eslint: Linter.Config = {
         'no-return-await': 'error',
         '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
         '@typescript-eslint/no-explicit-any': 'error',
+        'import/no-extraneous-dependencies': [
+            'error',
+            { devDependencies: ['**/*.test.ts', '**/*.spec.ts'] },
+        ],
+        'import/no-unresolved': 'off', // false positives, typescript handles this anyway
+        'import/no-duplicates': 'error',
     },
 }
 
