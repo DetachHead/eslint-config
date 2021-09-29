@@ -2,14 +2,14 @@
   "name": "@detachhead/eslint-config",
   "version": "0.0.1",
   "files": [
-    "dist"
+    "index.js"
   ],
   "scripts": {
-    "lint:check": "npm run build && eslint src --ext .ts",
+    "lint:check": "npm run build && eslint index.ts",
     "lint:fix": "npm run lint:check -- --fix",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
-    "build": "rimraf ./dist && tsc"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "detachhead",
@@ -30,7 +30,6 @@
     "@types/eslint": "^7.28.0",
     "@types/node": "^16.10.1",
     "prettier": "^2.4.1",
-    "rimraf": "^3.0.2",
     "typescript": "^4.4.0-beta"
   }
 }
