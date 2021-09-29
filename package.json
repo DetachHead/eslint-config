@@ -4,6 +4,7 @@
   "files": [
     "dist"
   ],
+  "main": "dist/index.js",
   "scripts": {
     "lint:check": "npm run build && eslint src --ext .ts",
     "lint:fix": "npm run lint:check -- --fix",
