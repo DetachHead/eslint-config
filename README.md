@@ -1,3 +1,2 @@
-# typescript-nodejs-project
-
-this is a template project. if you don't remove this message you are lazy
+# detachhead's eslint-config
+my recommended eslint rules for a typescript project

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/typescript-nodejs-project.iml" filepath="$PROJECT_DIR$/.idea/typescript-nodejs-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/eslint-config.iml" filepath="$PROJECT_DIR$/.idea/eslint-config.iml" />
     </modules>
   </component>
 </project>
