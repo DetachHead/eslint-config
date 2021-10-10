@@ -49,6 +49,7 @@ const eslint: Linter.Config = {
         'import/no-unresolved': 'off', // false positives, typescript handles this anyway
         'import/no-duplicates': 'error',
         'require-unicode-regexp': 'error',
+        'no-trailing-spaces': 'error',
     },
 }
 
