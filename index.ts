@@ -45,7 +45,7 @@ const eslint: Linter.Config = {
         '@typescript-eslint/no-explicit-any': 'error',
         'import/no-extraneous-dependencies': [
             'error',
-            { devDependencies: ['**/*.test.ts', '**/*.spec.ts'] },
+            { devDependencies: ['**/*.test.ts', '**/*.spec.ts', 'jest.config.ts'] },
         ],
         'import/no-unresolved': 'off', // false positives, typescript handles this anyway
         'import/no-duplicates': 'error',
