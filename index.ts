@@ -1,6 +1,7 @@
 import { Linter } from 'eslint'
 
 const eslint: Linter.Config = {
+    ignorePatterns: ['dist'],
     env: {
         node: true,
         es2021: true,
