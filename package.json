@@ -5,7 +5,7 @@
     "index.js"
   ],
   "scripts": {
-    "lint:check": "npm run build && eslint index.ts",
+    "lint:check": "npm run build && eslint .",
     "lint:fix": "npm run lint:check -- --fix",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
