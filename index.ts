@@ -49,6 +49,7 @@ const eslint: Linter.Config = {
             { devDependencies: ['**/*.test.ts', '**/*.spec.ts', 'jest.config.ts'] },
         ],
         'import/no-unresolved': 'off', // false positives, typescript handles this anyway
+        'import/export': 'off', // false positives when default exporting a class and an interface, typescript checks this anyway
         'import/no-duplicates': 'error',
         'require-unicode-regexp': 'error',
         'no-trailing-spaces': 'error',
