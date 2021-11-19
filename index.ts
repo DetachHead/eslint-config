@@ -10,6 +10,7 @@ const eslint: Linter.Config = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'prettier',
         'plugin:eslint-comments/recommended',
         'plugin:import/recommended',
