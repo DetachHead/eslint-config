@@ -54,6 +54,7 @@ const eslint: Linter.Config = {
         'require-unicode-regexp': 'error',
         'no-trailing-spaces': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'error',
+        '@typescript-eslint/no-extra-semi': 'off', // conflicts with my prettier config
     },
 }
 
