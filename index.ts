@@ -55,6 +55,7 @@ const eslint: Linter.Config = {
         'no-trailing-spaces': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/no-extra-semi': 'off', // conflicts with my prettier config
+        '@typescript-eslint/no-unnecessary-condition': 'error',
     },
 }
 
