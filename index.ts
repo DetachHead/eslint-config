@@ -27,7 +27,7 @@ const eslint: Linter.Config = {
         quotes: ['error', 'single', { avoidEscape: true }],
         semi: ['error', 'never'],
         '@typescript-eslint/ban-types': 'error',
-        'spaced-comment': 'error',
+        'spaced-comment': ['error', 'always', { markers: ['/'] }],
         '@typescript-eslint/no-throw-literal': 'error',
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/require-description': 'error',
