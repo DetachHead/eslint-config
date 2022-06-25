@@ -38,6 +38,7 @@ const eslint: Linter.Config = {
                 classPropertiesAllowed: true,
             },
         ],
+        '@typescript-eslint/method-signature-style': 'error',
         '@typescript-eslint/no-invalid-this': 'error',
         'require-await': 'error',
         '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true }],
@@ -56,6 +57,14 @@ const eslint: Linter.Config = {
         '@typescript-eslint/explicit-module-boundary-types': 'error',
         '@typescript-eslint/no-extra-semi': 'off', // conflicts with my prettier config
         '@typescript-eslint/no-unnecessary-condition': 'error',
+        'no-restricted-syntax': [
+            'error',
+            {
+                // https://github.com/typescript-eslint/typescript-eslint/issues/5243
+                selector: 'TSAbstractMethodDefinition',
+                message: 'old method syntax is not allowed. use an arrow function instead',
+            },
+        ],
     },
 }
 
