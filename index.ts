@@ -1,4 +1,5 @@
 import { Linter } from 'eslint'
+import { versionMajorMinor } from 'typescript'
 
 const eslint: Linter.Config = {
     ignorePatterns: ['dist'],
@@ -64,6 +65,16 @@ const eslint: Linter.Config = {
                 selector: 'TSAbstractMethodDefinition',
                 message: 'old method syntax is not allowed. use an arrow function instead',
             },
+            ...(Number(versionMajorMinor) >= 4.7
+                ? [
+                      {
+                          // https://github.com/typescript-eslint/typescript-eslint/issues/4799
+                          selector: 'TSTypeParameter[in=false][out=false]',
+                          message:
+                              'generics must specify the variance (with `in` and/or `out` keywords)',
+                      },
+                  ]
+                : []),
         ],
     },
 }

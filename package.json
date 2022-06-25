@@ -27,12 +27,12 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prefer-arrow": "^1.2.3"
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "typescript": "^4.4.0-beta"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.1",
     "@types/node": "^16.10.1",
-    "prettier": "^2.4.1",
-    "typescript": "^4.4.0-beta"
+    "prettier": "^2.4.1"
   }
 }
