@@ -69,7 +69,8 @@ const eslint: Linter.Config = {
                 ? [
                       {
                           // https://github.com/typescript-eslint/typescript-eslint/issues/4799
-                          selector: 'TSTypeParameter[in=false][out=false]',
+                          selector:
+                              ':matches(ClassDeclaration,TSTypeAliasDeclaration,TSInterfaceDeclaration)>TsTypeParameterDeclaration>TSTypeParameter[in=false][out=false]',
                           message:
                               'generics must specify the variance (with `in` and/or `out` keywords)',
                       },
