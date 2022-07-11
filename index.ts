@@ -65,6 +65,7 @@ const eslint: Linter.Config = {
                 message: 'old method syntax is not allowed. use an arrow function instead',
             },
         ],
+        '@typescript-eslint/no-inferrable-types': 'off',
     },
 }
 
