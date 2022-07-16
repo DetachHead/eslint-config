@@ -67,6 +67,7 @@ const eslint: Linter.Config = {
         ],
         '@typescript-eslint/no-inferrable-types': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
+        'no-extra-bind': 'error',
     },
 }
 
