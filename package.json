@@ -9,7 +9,8 @@
     "lint:fix": "npm run lint:check -- --fix",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
-    "build": "tsc"
+    "build": "tsc",
+    "bump": "npm version"
   },
   "keywords": [],
   "author": "detachhead",
