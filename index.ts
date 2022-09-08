@@ -47,7 +47,15 @@ const eslint: Linter.Config = {
         '@typescript-eslint/no-explicit-any': 'error',
         'import/no-extraneous-dependencies': [
             'error',
-            { devDependencies: ['**/*.test.ts', '**/*.spec.ts', 'jest.config.ts'] },
+            {
+                devDependencies: [
+                    '**/*.test.ts',
+                    '**/*.spec.ts',
+                    'jest.config.ts',
+                    '.eslintrc.cjs',
+                    '.eslintrc.js',
+                ],
+            },
         ],
 
         // false positives & handled by typescript anyway:
@@ -72,6 +80,10 @@ const eslint: Linter.Config = {
         '@typescript-eslint/no-inferrable-types': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         'no-extra-bind': 'error',
+
+        // typescript-eslint enables this for typescript files only, but js config files can benefit from it too because we aren't targeting an ancient node version
+        'no-var': 'error',
+
         'jsdoc/check-access': 'error',
         'jsdoc/check-alignment': 'error',
         'jsdoc/check-line-alignment': 'error',
