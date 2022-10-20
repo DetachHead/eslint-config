@@ -64,6 +64,7 @@ const eslint: Linter.Config = {
         'import/named': 'off',
 
         'import/no-duplicates': 'error',
+        'import/no-named-as-default': 'error',
         'require-unicode-regexp': 'error',
         'no-trailing-spaces': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'error',
