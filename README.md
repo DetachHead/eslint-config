@@ -1,16 +1,16 @@
-# detachhead's eslint-config
+# 🚀 detachhead's eslint-config
 
-my recommended eslint rules for a typescript project
+My recommended eslint rules for a TypeScript project.
 
-## install
+## 💾 How to install
 
 ```shell
 npm install --save-dev @detachhead/eslint-config
 ```
 
-## usage
+## ✨ How to use
 
-in your `.eslintrc.js`:
+Put in your `.eslintrc.js`:
 
 ```js
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
 }
 ```
 
-## troubleshooting
+## 🕵️‍♂️ Troubleshooting
 
-if you see errors about missing plugins, make sure all of the [`peerDependencies`](./package.json) are installed.
-also upvote [this issue](https://github.com/eslint/eslint/issues/3458) while you're at it
+If you see (drink) errors about missing plugins, make sure all of the [`peerDependencies`](./package.json) are installed.
+Also upvote [this issue](https://github.com/eslint/eslint/issues/3458) while you're at it.
