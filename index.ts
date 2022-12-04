@@ -62,6 +62,7 @@ const eslint: Linter.Config = {
         'import/no-unresolved': 'off',
         'import/export': 'off',
         'import/named': 'off',
+        'no-fallthrough': 'off',
 
         'import/no-duplicates': 'error',
         'import/no-named-as-default': 'error',
