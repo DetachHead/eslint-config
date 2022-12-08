@@ -83,6 +83,7 @@ const eslint: Linter.Config = {
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         '@typescript-eslint/no-non-null-assertion': 'error',
         'no-extra-bind': 'error',
+        '@typescript-eslint/no-shadow': 'error',
 
         // typescript-eslint enables this for typescript files only, but js config files can benefit from it too because we aren't targeting an ancient node version
         'no-var': 'error',
