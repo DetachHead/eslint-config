@@ -51,6 +51,7 @@ const eslint: Linter.Config = {
         'import/no-extraneous-dependencies': [
             'error',
             {
+                includeTypes: true,
                 devDependencies: [
                     '**/*.test.ts',
                     '**/*.spec.ts',
