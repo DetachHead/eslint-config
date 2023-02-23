@@ -117,7 +117,7 @@ const eslint: Linter.Config = {
         'jsdoc/no-types': 'error',
         'jsdoc/no-undefined-types': 'error',
         'jsdoc/require-asterisk-prefix': 'error',
-        'jsdoc/require-jsdoc': 'error',
+        'jsdoc/require-jsdoc': 'off',
         'jsdoc/require-param-description': 'error',
         'jsdoc/require-param-name': 'error',
         'jsdoc/require-property': 'error',
