@@ -21,7 +21,7 @@ const eslint: Linter.Config = {
         sourceType: 'module',
         project: './tsconfig.json',
     },
-    plugins: ['eslint-plugin-prefer-arrow', '@typescript-eslint', 'jsdoc'],
+    plugins: ['eslint-plugin-prefer-arrow', '@typescript-eslint', 'jsdoc', 'detachhead'],
     rules: {
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single', { avoidEscape: true }],
@@ -132,6 +132,7 @@ const eslint: Linter.Config = {
         'jsdoc/require-yields-check': 'error',
         'jsdoc/tag-lines': 'error',
         'jsdoc/valid-types': 'error',
+        'detachhead/require-variance-annotations': 'error',
     },
 }
 
