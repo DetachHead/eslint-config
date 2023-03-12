@@ -57,8 +57,10 @@ const eslint: Linter.Config = {
                     '**/*.test.ts',
                     '**/*.spec.ts',
                     'jest.config.ts',
-                    '.eslintrc.cjs',
-                    '.eslintrc.js',
+                    // files starting with . are typically project config files
+                    '.*.cjs',
+                    '.*.js',
+                    '.*.ts',
                 ],
             },
         ],
@@ -134,6 +136,7 @@ const eslint: Linter.Config = {
         'jsdoc/tag-lines': 'error',
         'jsdoc/valid-types': 'error',
     },
+    overrides: [{ files: ['*.js'], rules: { '@typescript-eslint/no-var-requires': 'off' } }],
 }
 
 module.exports = eslint
