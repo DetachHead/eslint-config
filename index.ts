@@ -14,6 +14,7 @@ const eslint: Linter.Config = {
         'prettier',
         'plugin:eslint-comments/recommended',
         'plugin:import/recommended',
+        'plugin:detachhead/all',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -132,7 +133,6 @@ const eslint: Linter.Config = {
         'jsdoc/require-yields-check': 'error',
         'jsdoc/tag-lines': 'error',
         'jsdoc/valid-types': 'error',
-        'detachhead/require-variance-annotations': 'error',
     },
 }
 
