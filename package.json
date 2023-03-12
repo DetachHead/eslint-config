@@ -1,6 +1,6 @@
 {
   "name": "@detachhead/eslint-config",
-  "version": "0.0.24",
+  "version": "1.0.0",
   "files": [
     "index.js"
   ],
