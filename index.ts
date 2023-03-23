@@ -46,7 +46,7 @@ const eslint: Linter.Config = {
         'no-return-await': 'error',
         '@typescript-eslint/no-unused-vars': [
             'error',
-            { caughtErrors: 'all', argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+            { args: 'all', caughtErrors: 'all', argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
         ],
         '@typescript-eslint/no-explicit-any': 'error',
         'import/no-extraneous-dependencies': [
