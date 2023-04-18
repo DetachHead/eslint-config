@@ -135,6 +135,14 @@ const eslint: Linter.Config = {
         'jsdoc/require-yields-check': 'error',
         'jsdoc/tag-lines': 'error',
         'jsdoc/valid-types': 'error',
+        'detachhead/suggestions-as-errors': [
+            'error',
+            {
+                exclude: [
+                    80001, // File is a CommonJS module; it may be converted to an ES module
+                ],
+            },
+        ],
     },
     overrides: [{ files: ['*.js'], rules: { '@typescript-eslint/no-var-requires': 'off' } }],
 }
