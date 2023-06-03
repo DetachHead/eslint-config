@@ -135,6 +135,7 @@ const eslint: Linter.Config = {
         'jsdoc/require-yields-check': 'error',
         'jsdoc/tag-lines': 'error',
         'jsdoc/valid-types': 'error',
+        'jsdoc/imports-as-dependencies': 'error',
         'detachhead/suggestions-as-errors': [
             'error',
             {
