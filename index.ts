@@ -92,6 +92,7 @@ const eslint: Linter.Config = {
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         '@typescript-eslint/no-non-null-assertion': 'error',
         '@typescript-eslint/return-await': ['error', 'in-try-catch'],
+        '@typescript-eslint/no-base-to-string': 'error',
         'no-extra-bind': 'error',
         '@typescript-eslint/no-shadow': 'error',
 
