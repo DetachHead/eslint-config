@@ -74,6 +74,13 @@ export = {
         'import/no-named-as-default': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-cycle': 'error',
+        'import/no-commonjs': [
+            'error',
+            {
+                // covered by @typescript-eslint/no-var-requires
+                allowRequire: true,
+            },
+        ],
         'import/no-self-import': 'error',
         'require-unicode-regexp': 'error',
         'no-trailing-spaces': 'error',
@@ -147,5 +154,10 @@ export = {
             },
         ],
     },
-    overrides: [{ files: ['*.js'], rules: { '@typescript-eslint/no-var-requires': 'off' } }],
+    overrides: [
+        {
+            files: ['*.js'],
+            rules: { '@typescript-eslint/no-var-requires': 'off', 'import/no-commonjs': 'off' },
+        },
+    ],
 } satisfies Linter.Config
