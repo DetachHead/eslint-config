@@ -1,6 +1,6 @@
 import { Linter } from 'eslint'
 
-const eslint: Linter.Config = {
+export = {
     ignorePatterns: ['dist'],
     env: {
         node: true,
@@ -148,6 +148,4 @@ const eslint: Linter.Config = {
         ],
     },
     overrides: [{ files: ['*.js'], rules: { '@typescript-eslint/no-var-requires': 'off' } }],
-}
-
-module.exports = eslint
+} satisfies Linter.Config
