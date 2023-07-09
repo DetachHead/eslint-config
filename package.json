@@ -38,5 +38,13 @@
     "@types/eslint": "^8.4.1",
     "@types/node": "^16.10.1",
     "prettier": "^2.4.1"
+  },
+  "//": "https://github.com/trivago/prettier-plugin-sort-imports/issues/204#issuecomment-1431287240",
+  "overrides": {
+    "@trivago/prettier-plugin-sort-imports": {
+      "@babel/core": "^7.21.8",
+      "@babel/parser": "^7.21.8",
+      "@babel/traverse": "^7.21.5"
+    }
   }
 }
