@@ -96,7 +96,7 @@ export = {
             },
         ],
         '@typescript-eslint/no-inferrable-types': 'off',
-        '@typescript-eslint/prefer-nullish-coalescing': 'error',
+        '@typescript-eslint/prefer-nullish-coalescing': ['error', { ignorePrimitives: true }],
         '@typescript-eslint/no-non-null-assertion': 'error',
         '@typescript-eslint/return-await': ['error', 'in-try-catch'],
         '@typescript-eslint/no-base-to-string': 'error',
