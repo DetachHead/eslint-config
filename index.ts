@@ -10,7 +10,7 @@ export = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:@typescript-eslint/recommended-type-checked',
         'prettier',
         'plugin:eslint-comments/recommended',
         'plugin:import/recommended',
@@ -102,6 +102,7 @@ export = {
         '@typescript-eslint/no-base-to-string': 'error',
         'no-extra-bind': 'error',
         '@typescript-eslint/no-shadow': 'error',
+        '@typescript-eslint/restrict-template-expressions': ['error', { allowNullish: false }],
 
         // typescript-eslint enables this for typescript files only, but js config files can benefit from it too because we aren't targeting an ancient node version
         'no-var': 'error',
