@@ -151,6 +151,7 @@ export = {
                 exclude: [
                     80001, // "File is a CommonJS module; it may be converted to an ES module" - esm in node is a pain because barely anything supports it properly
                     80005, // "'require' call may be converted to an import." - covered by @typescript-eslint/no-var-requires
+                    80007, // "'await' has no effect on the type of this expression." - covered by @typescript-eslint/await-thenable
                     7028, // "Unused label" - covered by no-unused-labels
                 ],
             },
