@@ -45,7 +45,7 @@ export = {
         ],
         '@typescript-eslint/method-signature-style': 'error',
         '@typescript-eslint/no-invalid-this': 'error',
-        'require-await': 'error',
+        '@typescript-eslint/require-await': 'error',
         '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true }],
         'no-return-await': 'error',
         '@typescript-eslint/no-unused-vars': [
