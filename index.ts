@@ -12,7 +12,7 @@ export = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-type-checked',
         'prettier',
-        'plugin:eslint-comments/recommended',
+        'plugin:@eslint-community/eslint-comments/recommended',
         'plugin:import/recommended',
         'plugin:detachhead/all',
     ],
@@ -31,8 +31,11 @@ export = {
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
         '@typescript-eslint/no-throw-literal': 'error',
         'prefer-promise-reject-errors': 'error',
-        'eslint-comments/no-unused-disable': 'error',
-        'eslint-comments/require-description': 'error',
+        '@eslint-community/eslint-comments/no-unused-disable': 'error',
+        '@eslint-community/eslint-comments/require-description': [
+            'error',
+            { ignore: ['eslint-enable'] },
+        ],
         eqeqeq: 'error',
         'prefer-arrow/prefer-arrow-functions': [
             'error',
