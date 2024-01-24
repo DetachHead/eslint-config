@@ -20,13 +20,13 @@
     "url": "https://github.com/DetachHead/eslint-config.git"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^6.5.0",
+    "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0"
   },
   "peerDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
     "eslint-plugin-detachhead": "^1.2.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsdoc": "^46.2.3",

@@ -30,7 +30,7 @@ export = {
         '@typescript-eslint/ban-types': 'error',
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
         '@typescript-eslint/no-throw-literal': 'error',
-        'prefer-promise-reject-errors': 'error',
+        '@typescript-eslint/prefer-promise-reject-errors': 'error',
         '@eslint-community/eslint-comments/no-unused-disable': 'error',
         '@eslint-community/eslint-comments/require-description': [
             'error',
