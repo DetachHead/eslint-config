@@ -45,7 +45,11 @@ export = {
         ],
         '@typescript-eslint/method-signature-style': 'error',
         '@typescript-eslint/no-invalid-this': 'error',
-        '@typescript-eslint/require-await': 'error',
+        // use the normal require-await rule because the @typescript-eslint one allows functions that return promises
+        // which don't use the await keyword. in those cases, the async keyword is redundant and leads to people
+        // misunderstanding exactly what the await keyword does.
+        'require-await': 'error',
+        '@typescript-eslint/require-await': 'off',
         '@typescript-eslint/no-floating-promises': ['error', { ignoreIIFE: true }],
         'no-return-await': 'error',
         '@typescript-eslint/no-unused-vars': [
