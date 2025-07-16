@@ -8,7 +8,7 @@ jobs:
             - uses: actions/checkout@main
             - uses: actions/setup-node@main
               with:
-                  node-version: 16.9.1
+                  node-version-file: package.json
             - run: npm ci
             - run: npm run build
             - run: npm run format:check
@@ -27,7 +27,7 @@ jobs:
             - uses: actions/checkout@main
             - uses: actions/setup-node@main
               with:
-                  node-version: 16.9.1
+                  node-version-file: package.json
             - run: echo ::set-output name=CURRENT_VERSION::$(node -p "require(\"./package.json\").version")
               id: current-version
             - if: github.ref == 'refs/heads/master'
