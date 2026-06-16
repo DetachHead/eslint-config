@@ -1,5 +1,6 @@
 {
-    "typescript.tsdk": "node_modules/typescript/lib",
+    "js/ts.tsdk.path": "node_modules/typescript/lib",
+    "js/ts.tsdk.promptToUseWorkspaceVersion": true,
     "editor.formatOnSave": true,
     "prettier.configPath": ".prettierrc.js",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -17,5 +18,7 @@
     "git.useCommitInputAsStashMessage": true,
     "git.useEditorAsCommitInput": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "chat.disableAIFeatures": true,
+    "telemetry.feedback.enabled": false
 }
