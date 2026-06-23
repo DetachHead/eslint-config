@@ -2,15 +2,17 @@
   "name": "@detachhead/eslint-config",
   "version": "1.5.4",
   "files": [
-    "eslint.config.js"
+    "dist/index.js"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "lint:check": "eslint .",
+    "lint:check": "tsc -p src && eslint .",
     "lint:fix": "npm run lint:check -- --fix",
     "format:check": "dprint check",
     "format:fix": "dprint fmt",
-    "typecheck": "tsc",
+    "build": "tsc -p src && tsc",
     "bump": "npm version"
   },
   "keywords": [],

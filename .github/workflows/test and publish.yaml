@@ -10,9 +10,13 @@ jobs:
         with:
           node-version-file: package.json
       - run: npm ci
-      - run: npm run typecheck
+      - run: npm run build
       - run: npm run format:check
       - run: npm run lint:check
+      - uses: actions/upload-artifact@main
+        with:
+          name: build
+          path: dist
   publish:
     name: publish
     runs-on: ubuntu-latest
@@ -27,6 +31,11 @@ jobs:
       - if: github.ref == 'refs/heads/master'
         run: echo ::set-output name=VERSION_INFO::$(npm view $(node -p "require(\"./package.json\").name")@=${{ steps.current-version.outputs.CURRENT_VERSION }})
         id: version-was-changed
+      - uses: actions/download-artifact@main
+        # need to publish if the branch isn't master, or it is master and the version in package.json hasn't been published yet
+        if: github.ref != 'refs/heads/master' || steps.version-was-changed.outputs.VERSION_INFO == ''
+        with:
+          name: build
 
       # publish canary version on every push to every branch except master
       - name: canary version

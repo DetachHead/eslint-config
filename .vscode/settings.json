@@ -2,7 +2,9 @@
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "dprint.dprint",
+  "[javascript][typescript][json][jsonc][yaml][github-actions-workflow][markdown]": {
+    "editor.defaultFormatter": "dprint.dprint"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
