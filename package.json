@@ -2,14 +2,15 @@
   "name": "@detachhead/eslint-config",
   "version": "1.5.4",
   "files": [
-    "index.js"
+    "eslint.config.js"
   ],
+  "type": "module",
   "scripts": {
-    "lint:check": "npm run build && eslint .",
+    "lint:check": "eslint .",
     "lint:fix": "npm run lint:check -- --fix",
-    "format:check": "prettier --check .",
-    "format:fix": "prettier --write .",
-    "build": "tsc",
+    "format:check": "dprint check",
+    "format:fix": "dprint fmt",
+    "typecheck": "tsc",
     "bump": "npm version"
   },
   "keywords": [],
@@ -20,32 +21,26 @@
     "url": "https://github.com/DetachHead/eslint-config.git"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^6.19.0",
-    "eslint": "^8.13.0",
-    "eslint-config-prettier": "^8.5.0"
+    "eslint": ">=9",
+    "typescript-eslint": ">=8.62.0"
   },
   "peerDependencies": {
+    "@eslint/js": ">=9",
     "@eslint-community/eslint-plugin-eslint-comments": ">=4.1.0",
-    "@typescript-eslint/eslint-plugin": "^6.19.0",
     "eslint-plugin-detachhead": "^1.2.0",
     "eslint-plugin-import": ">=2.27.5",
     "eslint-plugin-jsdoc": ">=51.4.0",
-    "eslint-plugin-prefer-arrow": ">=1.2.3",
+    "eslint-plugin-prefer-arrow-functions": ">=3.9.1",
     "typescript": ">=4.4.0"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@types/eslint": "^8.4.1",
-    "@types/node": "^16.10.1",
-    "prettier": "^2.4.1"
-  },
-  "//": "https://github.com/trivago/prettier-plugin-sort-imports/issues/204#issuecomment-1431287240",
-  "overrides": {
-    "@trivago/prettier-plugin-sort-imports": {
-      "@babel/core": "^7.21.8",
-      "@babel/parser": "^7.21.8",
-      "@babel/traverse": "^7.21.5"
-    }
+    "@dprint/json": "^0.21.3",
+    "@dprint/markdown": "^0.22.1",
+    "@dprint/typescript": "^0.96.1",
+    "@types/eslint": ">=8.4.1",
+    "@types/node": ">=16.10.1",
+    "dprint": "^0.54.0",
+    "dprint-plugin-yaml": "^0.6.0"
   },
   "engines": {
     "node": ">=18.18.0"
