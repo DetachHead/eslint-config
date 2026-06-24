@@ -24,5 +24,14 @@
   "json.schemaDownload.trustedDomains": {
     "https://plugins.dprint.dev": true,
     "https://raw.githubusercontent.com": true
+  },
+  "terminal.integrated.env.windows": {
+    "PATH": "${workspaceFolder}/node_modules/.bin;${env:PATH}"
+  },
+  "terminal.integrated.env.osx": {
+    "PATH": "${workspaceFolder}/node_modules/.bin:${env:PATH}"
+  },
+  "terminal.integrated.env.linux": {
+    "PATH": "${workspaceFolder}/node_modules/.bin:${env:PATH}"
   }
 }
