@@ -41,10 +41,18 @@ export default defineConfig(
       ],
       rules: {
         'sort-imports': 'off', // covered by dprint
+        'no-undefined': 'off', // other rules ban assigning to undefined
+        'preserve-caught-error': 'off', // what is this, python?
         'no-warning-comments': 'off',
         'sort-keys': 'off',
         'capitalized-comments': 'off',
         'no-inline-comments': 'off',
+        'one-var': 'off',
+        'arrow-body-style': 'off',
+        'max-statements': 'off',
+        'no-ternary': 'off',
+        'no-bitwise': 'off',
+        'new-cap': 'off',
         'linebreak-style': ['error', 'unix'],
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
         'eqeqeq': 'error',
@@ -65,6 +73,11 @@ export default defineConfig(
         '@typescript-eslint/require-await': 'off',
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off', // should enable when making a public API for a library, but most projects arent
+        '@typescript-eslint/consistent-type-imports': 'off', // should be enforced in tsconfig files instead where needed
+        '@typescript-eslint/no-unsafe-type-assertion': 'off', // banning casting is way too annoying. ideally there'd be separate widen/narrow cast syntax
+        '@typescript-eslint/prefer-readonly-parameter-types': 'off', // ideally we'd enable this rule but it complains about types we don't control that are too difficult to make readonly
+        '@typescript-eslint/no-magic-numbers': 'off', // there's no option to allow very common numbers like 0 or 1
         '@typescript-eslint/no-floating-promises': [
           'error',
           { ignoreIIFE: true },
@@ -189,7 +202,7 @@ export default defineConfig(
   {
     files: ['*.js', '*.cjs'],
     rules: {
-      '@typescript-eslint/no-var-requires': 'off',
+      '@typescript-eslint/no-require-imports': 'off',
       'import/no-commonjs': 'off',
     },
   },
