@@ -11,7 +11,11 @@ import tseslint from 'typescript-eslint';
 export default defineConfig(
   [
     {
+      // why on earth does `ignores` not work at all unless it's in a separate object on its own???
+      // so glad eslint made this massive breaking change to their config system only to replace it with a 10x more confusing and convoluted one
       ignores: ['**/dist/**'],
+    },
+    {
       languageOptions: {
         globals: {
           node: true,
