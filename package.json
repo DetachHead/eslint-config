@@ -2,7 +2,7 @@
   "name": "@detachhead/eslint-config",
   "version": "1.5.4",
   "files": [
-    "dist/index.js"
+    "dist"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

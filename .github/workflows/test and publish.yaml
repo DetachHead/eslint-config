@@ -16,7 +16,7 @@ jobs:
       - uses: actions/upload-artifact@main
         with:
           name: build
-          path: dist
+          path: dist/
   publish:
     name: publish
     runs-on: ubuntu-latest
@@ -36,6 +36,10 @@ jobs:
         if: github.ref != 'refs/heads/master' || steps.version-was-changed.outputs.VERSION_INFO == ''
         with:
           name: build
+          # https://github.com/actions/upload-artifact/issues/174
+          path: dist
+
+      - run: ls -R
 
       # publish canary version on every push to every branch except master
       - name: canary version
