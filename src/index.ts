@@ -41,6 +41,7 @@ export default defineConfig(
       ],
       rules: {
         'sort-imports': 'off', // covered by dprint
+        'no-undef': 'off', // covered by typescript
         'no-undefined': 'off', // other rules ban assigning to undefined
         'preserve-caught-error': 'off', // what is this, python?
         'no-warning-comments': 'off',
@@ -99,6 +100,13 @@ export default defineConfig(
               '**/*.test.ts',
               '**/*.spec.ts',
               'jest.config.ts',
+              'playwright.config.ts',
+              'eslint.config.cts',
+              'eslint.config.mts',
+              'eslint.config.ts',
+              'eslint.config.cjs',
+              'eslint.config.mjs',
+              'eslint.config.js',
               // Files starting with . are typically project config files
               '.*.cjs',
               '.*.js',
