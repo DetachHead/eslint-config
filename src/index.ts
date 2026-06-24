@@ -56,7 +56,6 @@ export default defineConfig(
         'new-cap': 'off',
         'linebreak-style': ['error', 'unix'],
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
-        'eqeqeq': 'error',
         '@eslint-community/eslint-comments/no-unused-disable': 'error',
         '@eslint-community/eslint-comments/require-description': [
           'error',
