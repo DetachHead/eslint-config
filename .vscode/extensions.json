@@ -1,8 +1,7 @@
 {
-    "recommendations": [
-        "orta.vscode-jest",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "mhutchie.git-graph"
-    ]
+  "recommendations": [
+    "orta.vscode-jest",
+    "dprint.dprint",
+    "dbaeumer.vscode-eslint"
+  ]
 }

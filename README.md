@@ -14,8 +14,8 @@ Put in your `.eslintrc.js`:
 
 ```js
 module.exports = {
-    extends: ['@detachhead/eslint-config'],
-}
+  extends: ['@detachhead/eslint-config'],
+};
 ```
 
 ## 🕵️‍♂️ Troubleshooting
