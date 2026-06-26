@@ -1,5 +1,15 @@
 # 🚀 detachhead's eslint-config
 
+> [!IMPORTANT]
+> 
+> **ARCHIVED**
+> 
+> since i created this repo, eslint completely changed how their config files work (while somehow not solving any of the problems that made eslint config such a nightmare in the first place). i gave up trying to get my config to work with this new system, and i now use oxlint instead.
+>
+> if you are looking for alternatives to these rules, most of them are either already covered by oxlint, or are on their roadmap.
+>
+> for alternatives to the rules unique to my eslint plugin, [see here](https://github.com/DetachHead/eslint-plugin-detachhead#eslint-plugin-detachhead).
+
 My recommended eslint rules for a TypeScript project.
 
 ## 💾 How to install
